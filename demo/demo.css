@@ -1,0 +1,501 @@
+.bg-hubble {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden; }
+  .bg-hubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: black; }
+  .bg-hubble:after {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 150%;
+    background-size: cover;
+    background-position: center;
+    -webkit-animation-name: hubble;
+            animation-name: hubble;
+    -webkit-animation-duration: 32s;
+            animation-duration: 32s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    outline: 2px solid rgba(255, 0, 0, 0.5); }
+
+@-webkit-keyframes hubble {
+  0% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  6.66667% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  13.33333% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  13.43333% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(12.5%, 12.5%);
+            transform: translate(12.5%, 12.5%);
+    opacity: 0; }
+
+  20% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 1; }
+
+  26.66667% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  33.33333% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 0; }
+
+  33.43333% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(12.5%, -12.5%);
+            transform: translate(12.5%, -12.5%);
+    opacity: 0; }
+
+  40% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 1; }
+
+  46.66667% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  53.33333% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 0; }
+
+  53.43333% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; }
+
+  60% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 1; }
+
+  66.66667% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  73.33333% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 0; }
+
+  73.43333% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(-12.5%, 12.5%);
+            transform: translate(-12.5%, 12.5%);
+    opacity: 0; }
+
+  80% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  86.66667% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  93.33333% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  93.43333% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; } }
+
+@keyframes hubble {
+  0% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  6.66667% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  13.33333% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  13.43333% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(12.5%, 12.5%);
+            transform: translate(12.5%, 12.5%);
+    opacity: 0; }
+
+  20% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 1; }
+
+  26.66667% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  33.33333% {
+    background-image: url(../images/02.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 0; }
+
+  33.43333% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(12.5%, -12.5%);
+            transform: translate(12.5%, -12.5%);
+    opacity: 0; }
+
+  40% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 1; }
+
+  46.66667% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  53.33333% {
+    background-image: url(../images/03.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 0; }
+
+  53.43333% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; }
+
+  60% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 1; }
+
+  66.66667% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  73.33333% {
+    background-image: url(../images/04.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 0; }
+
+  73.43333% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(-12.5%, 12.5%);
+            transform: translate(-12.5%, 12.5%);
+    opacity: 0; }
+
+  80% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  86.66667% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  93.33333% {
+    background-image: url(../images/05.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  93.43333% {
+    background-image: url(../images/01.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; } }
+
+.bg-lincoln {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden; }
+  .bg-lincoln::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: black; }
+  .bg-lincoln:after {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 150%;
+    background-size: cover;
+    background-position: center;
+    -webkit-animation-name: lincoln;
+            animation-name: lincoln;
+    -webkit-animation-duration: 32s;
+            animation-duration: 32s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    outline: 2px solid rgba(255, 0, 0, 0.5); }
+
+@-webkit-keyframes lincoln {
+  0% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  8.33333% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  16.66667% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  16.76667% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(12.5%, 12.5%);
+            transform: translate(12.5%, 12.5%);
+    opacity: 0; }
+
+  25% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 1; }
+
+  33.33333% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  41.66667% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 0; }
+
+  41.76667% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(12.5%, -12.5%);
+            transform: translate(12.5%, -12.5%);
+    opacity: 0; }
+
+  50% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 1; }
+
+  58.33333% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  66.66667% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 0; }
+
+  66.76667% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; }
+
+  75% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 1; }
+
+  83.33333% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  91.66667% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 0; }
+
+  91.76667% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; } }
+
+@keyframes lincoln {
+  0% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 1; }
+
+  8.33333% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  16.66667% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 0; }
+
+  16.76667% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(12.5%, 12.5%);
+            transform: translate(12.5%, 12.5%);
+    opacity: 0; }
+
+  25% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 1; }
+
+  33.33333% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  41.66667% {
+    background-image: url(../images/lincoln-2.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 0; }
+
+  41.76667% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(12.5%, -12.5%);
+            transform: translate(12.5%, -12.5%);
+    opacity: 0; }
+
+  50% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(6.25%, -6.25%);
+            transform: translate(6.25%, -6.25%);
+    opacity: 1; }
+
+  58.33333% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  66.66667% {
+    background-image: url(../images/lincoln-3.jpg);
+    -webkit-transform: translate(-6.25%, 6.25%);
+            transform: translate(-6.25%, 6.25%);
+    opacity: 0; }
+
+  66.76667% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; }
+
+  75% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(-6.25%, -6.25%);
+            transform: translate(-6.25%, -6.25%);
+    opacity: 1; }
+
+  83.33333% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+
+  91.66667% {
+    background-image: url(../images/lincoln-4.jpg);
+    -webkit-transform: translate(6.25%, 6.25%);
+            transform: translate(6.25%, 6.25%);
+    opacity: 0; }
+
+  91.76667% {
+    background-image: url(../images/lincoln-1.jpg);
+    -webkit-transform: translate(-12.5%, -12.5%);
+            transform: translate(-12.5%, -12.5%);
+    opacity: 0; } }

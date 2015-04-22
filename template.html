@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+  <meta name="author" content="<%= author %>">
+  <meta name="description" content="<%= description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% obj.stylesheets.forEach(function(stylesheet) { %>
+    <link rel="stylesheet" href="<%= stylesheet %>">
+  <% }) %>
+</head>
+<body class="xp3">
+
+  <div class="overflow-hidden">
+    <div class="flex flex-center white bg-hubble" style="min-height:100vh">
+      <div class="center mx-auto">
+        <h1 class="h0 h0-responsive m0"><%= title %></h1>
+        <p class="h3 bold m0"><%= description %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-center white bg-lincoln" style="min-height:100vh">
+    <div class="mx-auto">
+      <h1 class="h0 h0-responsive m0">Lincoln</h1>
+    </div>
+  </div>
+
+
+</body>
+</html>

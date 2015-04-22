@@ -1,0 +1,106 @@
+
+@mixin kenburns($options) {
+
+  $name: map-get($options, name);
+  $duration: map-get($options, duration);
+
+    $distance: 12.5%;
+
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: black;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -$distance * 2;
+    left: -$distance * 2;
+    z-index: -1;
+    width: 100% + $distance * 4;
+    height: 100% + $distance * 4;
+    background-size: cover;
+    background-position: center;
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    outline: 2px solid rgba(255,0,0,.5);
+  }
+
+}
+
+
+@mixin kenburns-keyframes($options) {
+
+  $name: map-get($options, name);
+  $images: map-get($options, images);
+  $duration: map-get($options, duration);
+  $length: length($images);
+  $split: 100% / $length;
+  $increment: $split / 3;
+
+    $distance: 12.5%;
+
+  $directions: (
+    (-1, -1),
+    (-1, 1),
+    (1, 1),
+    (1, -1),
+  );
+
+  @keyframes #{$name} {
+    @each $image in $images {
+      $index: index($images, $image);
+      $step: $split * ($index - 1);
+      $d: nth($directions, $index % 4 + 1);
+      $dx: nth($d, 1);
+      $dy: nth($d, 2);
+      @if ($index < $length) {
+        $next-image: nth($images, $index + 1);
+        $next-d: nth($directions, ($index + 1) % 4 + 1);
+        $next-dx: nth($next-d, 1);
+        $next-dy: nth($next-d, 2);
+      } @else {
+        $next-image: nth($images, 1);
+        $next-d: nth($directions, 1);
+        $next-dx: nth($next-d, 1);
+        $next-dy: nth($next-d, 2);
+      }
+      #{$step} {
+        background-image: $image;
+        transform: translate($distance/2 * $dx, $distance/2 * $dy);
+        opacity: 1;
+      }
+      #{$step + ($split/3)} {
+        background-image: $image;
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      #{$step + 2 * ($split/3)} {
+        background-image: $image;
+        transform: translate(-$distance/2 * $dx, -$distance/2 * $dy);
+        opacity: 0;
+      }
+      #{$step + 2 * ($split/3) + .1%} {
+        background-image: $next-image;
+        transform: translate($distance * $next-dx, $distance * $next-dy);
+        opacity: 0;
+      }
+      // Needs to add up to 100%
+
+    }
+  }
+
+}
+

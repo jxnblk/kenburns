@@ -1,0 +1,22 @@
+{
+  "name": "kenburns",
+  "version": "1.0.0",
+  "description": "Ken Burns effect for background images in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "css": "cssnext src/kenburns.css kenburns.css",
+    "html": "node build",
+    "sass": "node-sass demo/demo.scss demo/demo.css",
+    "autoprefix": "autoprefixer demo/demo.css",
+    "start": "npm run sass && npm run autoprefix & npm run html"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^5.1.1",
+    "cssnext": "^1.3.0",
+    "lodash": "^3.7.0",
+    "node-sass": "^2.1.1"
+  }
+}

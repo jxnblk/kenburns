@@ -1,0 +1,132 @@
+
+.bg-kenburns {
+  /*
+  animation-name: kenburns;
+  animation-duration: var(--duration);
+  animation-iteration-count: infinite;
+  background-size: cover;
+  */
+  position: relative;
+  background-color: transparent;
+}
+
+.bg-kenburns:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  background-color: black;
+}
+
+.bg-kenburns:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  right: -20%;
+  bottom: -20%;
+  left: -20%;
+  background-size: cover;
+  -webkit-animation-name: kenburns-alt;
+          animation-name: kenburns-alt;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes kenburns {
+
+    0% { background-image: url(images/01.jpg); background-position: top left;     opacity: 1; }
+   10% { background-image: url(images/01.jpg); background-position: bottom right; opacity: 1; }
+   15% { background-image: url(images/01.jpg); background-position: bottom right; opacity: 0; }
+
+   20% { background-image: url(images/02.jpg); background-position: bottom right; opacity: 1; }
+   30% { background-image: url(images/02.jpg); background-position: top left;     opacity: 1; }
+   35% { background-image: url(images/02.jpg); background-position: top left;     opacity: 0;}
+
+   40% { background-image: url(images/03.jpg); background-position: top left;     opacity: 1; }
+   50% { background-image: url(images/03.jpg); background-position: bottom right; opacity: 1; }
+
+   60% { background-image: url(images/04.jpg); background-position: bottom right; opacity: 1; }
+   70% { background-image: url(images/04.jpg); background-position: top left;     opacity: 1; }
+
+   80% { background-image: url(images/05.jpg); background-position: top left;     opacity: 1; }
+   90% { background-image: url(images/05.jpg); background-position: bottom right; opacity: 1; }
+
+  100% { background-image: url(images/01.jpg); background-position: top left;     opacity: 1; }
+
+}
+
+@keyframes kenburns {
+
+    0% { background-image: url(images/01.jpg); background-position: top left;     opacity: 1; }
+   10% { background-image: url(images/01.jpg); background-position: bottom right; opacity: 1; }
+   15% { background-image: url(images/01.jpg); background-position: bottom right; opacity: 0; }
+
+   20% { background-image: url(images/02.jpg); background-position: bottom right; opacity: 1; }
+   30% { background-image: url(images/02.jpg); background-position: top left;     opacity: 1; }
+   35% { background-image: url(images/02.jpg); background-position: top left;     opacity: 0;}
+
+   40% { background-image: url(images/03.jpg); background-position: top left;     opacity: 1; }
+   50% { background-image: url(images/03.jpg); background-position: bottom right; opacity: 1; }
+
+   60% { background-image: url(images/04.jpg); background-position: bottom right; opacity: 1; }
+   70% { background-image: url(images/04.jpg); background-position: top left;     opacity: 1; }
+
+   80% { background-image: url(images/05.jpg); background-position: top left;     opacity: 1; }
+   90% { background-image: url(images/05.jpg); background-position: bottom right; opacity: 1; }
+
+  100% { background-image: url(images/01.jpg); background-position: top left;     opacity: 1; }
+
+}
+
+@-webkit-keyframes kenburns-alt {
+
+    0% { background-image: url(images/01.jpg); top: 0;    opacity: 1; }
+   10% { background-image: url(images/01.jpg); top: -20%; opacity: 1; }
+   15% { background-image: url(images/01.jpg); top: 0;    opacity: 0; }
+
+   20% { background-image: url(images/02.jpg); top: 0; opacity: 1; }
+   30% { background-image: url(images/02.jpg); top: -20%; opacity: 1; }
+   35% { background-image: url(images/02.jpg); top: 0; opacity: 0;}
+
+   40% { background-image: url(images/03.jpg); top: 0; opacity: 1; }
+   50% { background-image: url(images/03.jpg); top: -20%; opacity: 1; }
+
+   60% { background-image: url(images/04.jpg); top: 0; opacity: 1; }
+   70% { background-image: url(images/04.jpg); top: -20%; opacity: 1; }
+
+   80% { background-image: url(images/05.jpg); top: 0; opacity: 1; }
+   90% { background-image: url(images/05.jpg); top: -20%; opacity: 1; }
+
+  100% { background-image: url(images/01.jpg); top: 0; opacity: 1; }
+
+}
+
+@keyframes kenburns-alt {
+
+    0% { background-image: url(images/01.jpg); top: 0;    opacity: 1; }
+   10% { background-image: url(images/01.jpg); top: -20%; opacity: 1; }
+   15% { background-image: url(images/01.jpg); top: 0;    opacity: 0; }
+
+   20% { background-image: url(images/02.jpg); top: 0; opacity: 1; }
+   30% { background-image: url(images/02.jpg); top: -20%; opacity: 1; }
+   35% { background-image: url(images/02.jpg); top: 0; opacity: 0;}
+
+   40% { background-image: url(images/03.jpg); top: 0; opacity: 1; }
+   50% { background-image: url(images/03.jpg); top: -20%; opacity: 1; }
+
+   60% { background-image: url(images/04.jpg); top: 0; opacity: 1; }
+   70% { background-image: url(images/04.jpg); top: -20%; opacity: 1; }
+
+   80% { background-image: url(images/05.jpg); top: 0; opacity: 1; }
+   90% { background-image: url(images/05.jpg); top: -20%; opacity: 1; }
+
+  100% { background-image: url(images/01.jpg); top: 0; opacity: 1; }
+
+}
+
