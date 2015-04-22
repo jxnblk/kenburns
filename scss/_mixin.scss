@@ -34,7 +34,7 @@ $kenburns-directions: ( (-1, -1), (-1, 1), (1, 1), (1, -1) ) !default;
     z-index: -1;
     width: 100% + $distance * 4;
     height: 100% + $distance * 4;
-    transform: translate($distance/2 * $dx, $distance/2 * $dy);
+    transform: translate3d($distance/2 * $dx, $distance/2 * $dy, 0);
     opacity: 1;
     background-image: nth($images, 1);
     background-size: cover;
@@ -80,7 +80,7 @@ $kenburns-directions: ( (-1, -1), (-1, 1), (1, 1), (1, -1) ) !default;
 
       #{$increment} {
         background-image: $image;
-        transform: translate($distance/2 * $dx, $distance/2 * $dy);
+        transform: translate3d($distance/2 * $dx, $distance/2 * $dy, 0);
         opacity: 1;
       }
 
@@ -88,7 +88,7 @@ $kenburns-directions: ( (-1, -1), (-1, 1), (1, 1), (1, -1) ) !default;
 
       #{$increment} {
         background-image: $image;
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
       }
 
@@ -96,13 +96,13 @@ $kenburns-directions: ( (-1, -1), (-1, 1), (1, 1), (1, -1) ) !default;
 
       #{$increment - .01%} {
         background-image: $image;
-        transform: translate(-$distance/2 * $dx, -$distance/2 * $dy);
+        transform: translate3d(-$distance/2 * $dx, -$distance/2 * $dy, 0);
         opacity: 0;
       }
 
       #{$increment} {
         background-image: $next-image;
-        transform: translate($distance * $next-dx, $distance * $next-dy);
+        transform: translate3d($distance * $next-dx, $distance * $next-dy, 0);
         opacity: 0;
       }
 
@@ -111,7 +111,7 @@ $kenburns-directions: ( (-1, -1), (-1, 1), (1, 1), (1, -1) ) !default;
       @if ($index == $length) {
         #{$increment} {
           background-image: $next-image;
-          transform: translate($distance/2 * $next-dx, $distance/2 * $next-dy);
+          transform: translate3d($distance/2 * $next-dx, $distance/2 * $next-dy, 0);
           opacity: 1;
         }
       }
