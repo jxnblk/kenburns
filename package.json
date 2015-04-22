@@ -1,14 +1,10 @@
 {
-  "name": "kenburns",
+  "name": "kenburns-css",
   "version": "1.0.0",
   "description": "Sass mixin for Ken Burns effect background images",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha test",
-    "css": "cssnext src/kenburns.css kenburns.css",
-    "html": "node build",
+    "html": "node demo/build",
     "sass": "node-sass demo/demo.scss demo/demo.css",
-    "img": "imagemin images/src/* images -o 0",
     "autoprefix": "autoprefixer demo/demo.css",
     "start": "npm run sass && npm run autoprefix & npm run html"
   },
@@ -20,5 +16,13 @@
     "imagemin": "^3.1.0",
     "lodash": "^3.7.0",
     "node-sass": "^2.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/kenburns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxnblk/kenburns/issues"
+  },
+  "homepage": "https://github.com/jxnblk/kenburns"
 }

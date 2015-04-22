@@ -4,28 +4,16 @@
 $hubble: (
   name: hubble,
   duration: 64s,
+  distance: 12.5%,
   images: (
-    url(../images/02.jpg),
-      //url(../images/01.jpg),
-    url(../images/03.jpg),
-    url(../images/04.jpg),
-    url(../images/05.jpg),
-    url(../images/lincoln-1.jpg),
-    url(../images/lincoln-2.jpg),
-    url(../images/lincoln-3.jpg),
-    url(../images/lincoln-4.jpg),
-  )
-);
-
-
-$lincoln: (
-  name: lincoln,
-  duration: 32s,
-  images: (
-    url(../images/lincoln-1.jpg),
-    url(../images/lincoln-2.jpg),
-    url(../images/lincoln-3.jpg),
-    url(../images/lincoln-4.jpg),
+    url(images/02.jpg),
+    url(images/03.jpg),
+    url(images/04.jpg),
+    url(images/05.jpg),
+    url(images/lincoln-1.jpg),
+    url(images/lincoln-2.jpg),
+    url(images/lincoln-3.jpg),
+    url(images/lincoln-4.jpg),
   )
 );
 
@@ -34,10 +22,4 @@ $lincoln: (
 }
 
 @include kenburns-keyframes($hubble);
-
-.bg-lincoln {
-  @include kenburns($lincoln);
-}
-
-@include kenburns-keyframes($lincoln);
 
