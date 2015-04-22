@@ -11,7 +11,7 @@ npm install kenburns-css
 ```
 
 ```bash
-bower install kenburns-css
+bower install kenburns
 ```
 
 ```scss
