@@ -8,6 +8,7 @@
     "css": "cssnext src/kenburns.css kenburns.css",
     "html": "node build",
     "sass": "node-sass demo/demo.scss demo/demo.css",
+    "img": "imagemin images/src/* images -o 0",
     "autoprefix": "autoprefixer demo/demo.css",
     "start": "npm run sass && npm run autoprefix & npm run html"
   },
@@ -16,6 +17,7 @@
   "devDependencies": {
     "autoprefixer": "^5.1.1",
     "cssnext": "^1.3.0",
+    "imagemin": "^3.1.0",
     "lodash": "^3.7.0",
     "node-sass": "^2.1.1"
   }
