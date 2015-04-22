@@ -3,13 +3,17 @@
 
 $hubble: (
   name: hubble,
-  duration: 32s,
+  duration: 64s,
   images: (
-    url(../images/01.jpg),
     url(../images/02.jpg),
+      //url(../images/01.jpg),
     url(../images/03.jpg),
     url(../images/04.jpg),
-    url(../images/05.jpg)
+    url(../images/05.jpg),
+    url(../images/lincoln-1.jpg),
+    url(../images/lincoln-2.jpg),
+    url(../images/lincoln-3.jpg),
+    url(../images/lincoln-4.jpg),
   )
 );
 

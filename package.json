@@ -1,7 +1,7 @@
 {
   "name": "kenburns",
   "version": "1.0.0",
-  "description": "Ken Burns effect for background images in CSS",
+  "description": "Sass mixin for Ken Burns effect background images",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
